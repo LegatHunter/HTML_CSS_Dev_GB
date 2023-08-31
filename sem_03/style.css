@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Open Sans';
+    scroll-behavior: smooth;
+    background-color: #020A18;
+    color: #fff;
+    font-weight: 600;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+header{
+    background-color: #020A18;
+    height: 100px;
+    margin-bottom: 160px;
+}
+
+nav{
+    width: auto;
+    height: 100px;
+}
+
+.container {
+    max-width: 1146px;
+    margin: 0 auto;
+}
+
+.navigation{
+    padding: 39px 0;
+}
+
+.navigation__link{
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+}
+
+.main{
+    margin-bottom: 197px;
+}
+
+.content__left-side{
+    max-width: 604px;
+}
+
+.content__left-side h2{
+    color: #3A68B8;
+    font-size: 18px;
+    line-height: 160%;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.content__left-side h1 {
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 130%;
+    margin-bottom: 40px;
+
+}
+
+.content__left-side p {
+    max-width: 558px;
+    font-size: 18px;
+    line-height: 160%;
+    font-weight: 600;
+    opacity: 0.7;
+    margin-bottom: 50px;
+}
+
+.btm {
+color: #fff;
+font-family: 'Open Sans';
+font-size: 20px;
+font-weight: 600;
+padding: 27px;
+border-radius: 5px;
+background: #3A68B8;
+padding: 15px 30px;
+border: none;
+cursor: pointer;
+}
