@@ -1,4 +1,5 @@
 *{
+    box-sizing: border-box;
     text-decoration: none;
 
 }
@@ -17,8 +18,16 @@
     src: url(./font/Gilroy-Semibold.woff2);
 }
 
+body{
+    scroll-behavior: smooth;
+}
+
+div{
+    display: block;
+}
+
 .menu{
-    width: 1170px;
+    max-width: 1170px;
     height: 40px;
     margin-top: 40px;
     margin-bottom: 84px;
@@ -28,6 +37,9 @@ img{
     display: block;
 }
 
+.header{
+    height: 100px;
+}
 .header__menu{
     color: black;
     font-family: 'Gilroy-Medium';
