@@ -47,6 +47,8 @@ img{
 
 .header__menu{
     display: flex;
+    width: 533px;
+    justify-content: space-between;
 }
 
 .home__src{
@@ -104,11 +106,6 @@ img{
     display: flex;
 }
 
-footer{
-    display: flex;
-    align-items: center;
-    height: 243px;
-}
 
 .footer__logo{
     display: flex;
@@ -176,16 +173,19 @@ footer{
     background-color: #fafafa;
 }
 
+
 .product__text{
     width: 682px;
     margin-bottom: 55px;
+    margin: 0 auto 55px;
+    text-align: center;
+    padding-top: 92px;
 }
 
 .product__text h2{
     font-family: Gilroy-Bold;
     font-size: 45px;
     line-height: 52px;
-    margin-top: 92px;
     margin-bottom: 19px;
 }
 
