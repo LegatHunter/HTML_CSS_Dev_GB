@@ -121,6 +121,7 @@ img{
     flex-wrap: wrap;
     align-items: baseline;
     margin-bottom: 100px;
+    gap: 60px;
 }
 
 .info img{
@@ -151,12 +152,10 @@ img{
 
 .grow{
     width: 310px;
-    margin-right: 61px;
 }
 
 .get{
     width: 370px;
-    margin-right: 59px;
     box-shadow: 15px 25px 56px 6px #0000000F;
 
 }
@@ -198,6 +197,7 @@ img{
 .product__item{
     display: flex;
     margin-bottom: 100px;
+    gap: 30px;
 }
 
 .product__item img{
@@ -237,12 +237,7 @@ img{
 
 }
 
-.product__item1{
-    margin-right: 30px;
-}
-
 .product__item2{
-    margin-right: 30px;
     box-shadow: 15px 25px 60px -5px #0000001A;
 }
 
