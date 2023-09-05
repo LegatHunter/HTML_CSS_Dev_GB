@@ -36,6 +36,9 @@ nav{
 
 .navigation{
     padding: 39px 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
 }
 
 .navigation__link{
@@ -46,6 +49,12 @@ nav{
 
 .main{
     margin-bottom: 197px;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;;
 }
 
 .content__left-side{
@@ -77,6 +86,11 @@ nav{
     margin-bottom: 50px;
 }
 
+.content__btm-list {
+    display: flex;
+    gap: 20px;
+}
+
 .btm {
 color: #fff;
 font-family: 'Open Sans';
@@ -88,4 +102,18 @@ background: #3A68B8;
 padding: 15px 30px;
 border: none;
 cursor: pointer;
+}
+
+.btm__2 {
+    display: flex;
+    gap: 10px;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    margin-bottom: 99px;
 }
