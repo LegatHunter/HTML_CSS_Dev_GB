@@ -32,9 +32,26 @@ img{
     margin: 0 auto;
 }
 
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
 .menu{
+    max-width: 1170px;
+    height: 40px;
     margin-top: 40px;
     margin-bottom: 84px;
+}
+
+img{
+    display: block;
+}
+
+.header{
+    height: 100px;
+}
+.header__menu{
     color: black;
     font-family: 'Gilroy-Medium';
     font-size: 14px;
@@ -66,7 +83,7 @@ img{
     font-family: 'Gilroy-Bold';
     font-size: 60px;
     font-weight: 400;
-    max-width: 522px;
+    width: 522px;
     margin-bottom: 17px;
     line-height: 70px;
 }
@@ -294,8 +311,9 @@ img{
     box-shadow: 15px 25px 60px -5px #0000001A;
 }
 
-.product__item1, .product__item2, .product__item3{
-    background-color: white;
+footer{
+    width: 1920px;
+    height: 243px;
 }
 
 .compas {
