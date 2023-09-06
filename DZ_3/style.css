@@ -172,15 +172,6 @@ img{
     padding: 16px 31px 15px 31px;
 }
 
-
-
-
-
-
-
-
-
-
 .info{
     display: flex;
     margin-top: 100px;
@@ -217,26 +208,20 @@ img{
     color: #000;
 }
 
-.grow{
+.grow .drive{
     max-width: 310px;
 }
 
 .get{
     max-width: 370px;
     box-shadow: 15px 25px 56px 6px #0000000F;
-
-}
-
-.drive{
-    max-width: 310px;
-}
-
-.get{
     padding: 40px 31px 25px 30px;
+
 }
 
 .product{
     background-color: #fafafa;
+    padding-bottom: 100px;
 }
 
 
@@ -264,10 +249,7 @@ img{
 .product__item{
     display: flex;
     gap: 30px;
-}
-
-.product {
-    padding-bottom: 100px;
+    background-color: white;
 }
 
 .product__item img{
@@ -318,7 +300,9 @@ footer{
 
 .compas {
     display: flex;
+    gap: 30px;
 }
+
 
 .compas__text h2 {
     font-family: 'Gilroy-Bold';
