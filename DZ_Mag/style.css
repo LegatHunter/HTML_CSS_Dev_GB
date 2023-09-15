@@ -63,7 +63,6 @@ header {
 }
 
 .preview__text {
-
     font-weight: 700px;
     font-size: 32px;
     line-height: 38.4px;
@@ -318,6 +317,11 @@ header {
     margin-bottom: 32px;
 }
 
+.email__submit {
+    display: flex;
+    justify-content: center;
+}
+
 .email {
     max-width: 256px;
     min-height: 49px;
@@ -338,7 +342,8 @@ header {
     font-size: 14px;
     line-height: 16.8px;
     border-radius: 0px 20px 20px 0px;
-    padding: 16px 20px 16px 20px;
+    height: 49px;
+    padding: 0px 20px 0px 20px;
 }
 
 footer {
@@ -373,3 +378,44 @@ footer {
     justify-content: center;
 }
 
+@media(max-width: 1600px) and (min-width: 767px) {
+        body {
+            min-width: 767px;
+        }
+        .container {
+            max-width: 736px;
+        }
+        pre {
+            max-width: 767px;
+        }
+        .preview {
+            max-width: 767px;
+            max-height: 367.5px;
+        }
+        .preview__div {
+            max-width: 736px;
+        }
+        .preview__text {
+            font-size: 24px;
+            line-height: 28.8px;
+            max-width: 311px;
+            padding-left: 39px;
+            margin-top: 138px;
+        }
+        .brand {
+            font-size: 44px;
+            line-height: 52.8px;
+        }
+        .grid {
+            gap: 20px;
+        }
+        .item__size {
+            max-width: 232px;
+            min-height: 167px;
+        }
+        .item4__long {
+            background-image: url(./img/Item_4_long.jpg);
+            max-width: 734px;
+            min-height: 116px;
+        }
+}

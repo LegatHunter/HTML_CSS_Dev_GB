@@ -175,3 +175,65 @@ img {
         max-width: 362px;
     }
 }
+
+@media (max-width: 847px) {
+    .container {
+        max-width: 343px;
+    }
+
+    .navigation__link {
+        font-size: 14px;
+    }
+
+    .navigation {
+        gap: 16px;
+        padding: 22px 0;
+    }
+
+    .header {
+        margin-bottom: 64px;
+    }
+
+    .content {
+        flex-direction: column;
+        gap: 128px;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 128px;
+    }
+
+    .content__left-side h2 {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+    .content__left-side h1 {
+        font-size: 28px;
+        margin-bottom: 64px;
+    }
+
+    .content__left-side p {
+        margin-bottom: 39px;
+    }
+    .content__btn-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .logos {
+        gap: 32px;
+        justify-content: center;
+    }
+    .carts__list {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        justify-items: center;
+    }
+    .hidden {
+        display: none;
+    }
+    .card {
+        background: #111522;
+        max-width: 343px;
+    }
+}
