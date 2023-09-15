@@ -3,7 +3,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     text-decoration: none;
 }
 
@@ -220,6 +219,7 @@ header {
 }
 
 .btn__all__product {
+    font-family: 'Lato';
     font-size: 16px;
     font-weight: 400;
     line-height: 19.2px;
@@ -265,6 +265,7 @@ header {
     font-weight: 300;
     font-size: 13.97px;
     line-height: 16.77px;
+    color: #FBFBFB;
 }
 
 .subscribe {
@@ -334,6 +335,7 @@ header {
 }
 
 .btn__subscribe {
+    font-family: 'Lato';
     border: none;
     cursor: pointer;
     background: #F16D7F;
@@ -378,19 +380,21 @@ footer {
     justify-content: center;
 }
 
-@media(max-width: 1600px) and (min-width: 767px) {
+@media(max-width: 1600px) and (min-width: 768px) {
         body {
             min-width: 767px;
         }
         .container {
             max-width: 736px;
         }
-        pre {
-            max-width: 767px;
+        .header {
+            margin-left: 32px;
+            margin-right: 32px;
         }
         .preview {
-            max-width: 767px;
-            max-height: 367.5px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 39px;
         }
         .preview__div {
             max-width: 736px;
@@ -413,9 +417,59 @@ footer {
             max-width: 232px;
             min-height: 167px;
         }
+        .item1 {
+            background-size: cover;
+        }
+        .item2 {
+            background-size: cover;
+        }
+        .item3 {
+            background-size: cover;
+        }
         .item4__long {
-            background-image: url(./img/Item_4_long.jpg);
+            background-size: cover;
             max-width: 734px;
             min-height: 116px;
+        }
+        .product {
+            margin-top: 110px;
+        }
+        .product__intro {
+            margin-bottom: 72px;
+        }
+        .grid__product {
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+        .all__product {
+            margin-bottom: 65px;
+        }
+        .predlog {
+            padding: 48px 0 64px 0;
+        }
+        .predlog__cont {
+            flex-direction: column;
+            align-content: center;
+            gap: 48px;
+        }
+        .subscribe__cont {
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            padding-top: 64px;
+            padding-bottom: 140px;
+            gap: 48px;
+        }
+        .subscribe__cont img {
+            height: 96px;
+            width: 96px;
+        }
+        .subscribe__cont h5 {
+            margin-bottom: 27px;
+        }
+        .footer__cont {
+            padding: 30px 32px;
         }
 }
