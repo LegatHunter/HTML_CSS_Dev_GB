@@ -8,8 +8,9 @@
 
 body {
     scroll-behavior: smooth;
-    min-width: 1600px;
+    max-width: 1600px;
     font-family: 'Lato';
+    margin: 0 auto;
 }
 
 img {
@@ -380,9 +381,9 @@ footer {
     justify-content: center;
 }
 
-@media(max-width: 1600px) and (min-width: 768px) {
+@media(max-width: 768px) and (min-width: 376px) {
         body {
-            min-width: 767px;
+            max-width: 768px;
         }
         .container {
             max-width: 736px;
@@ -472,4 +473,34 @@ footer {
         .footer__cont {
             padding: 30px 32px;
         }
+}
+
+@media (max-width: 375px) {
+    body {
+        max-width: 375px
+    }
+    .hidden {
+        display: none;
+    }
+    .container {
+        max-width: 359px;
+    }
+    .header {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .preview__text {
+        margin: 148px 56px;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+
+        gap: 32px;
+    }
+
+    .grid__product {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-bottom: 32px;
+    }
 }
