@@ -495,6 +495,18 @@ footer {
     }
     .grid {
         gap: 32px;
+        display: flex;
+        flex-direction: column;
+         
+    }
+    .item__size {
+        display: flex;
+        
+    }
+    .bop {
+        display: flex;
+        
+
     }
     .item__size {
         max-width: 343px;
