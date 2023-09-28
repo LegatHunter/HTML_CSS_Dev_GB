@@ -582,6 +582,12 @@ footer {
         .footer__cont {
             padding: 30px 32px;
         }
+        .menu__burger {
+            display: none;
+        }
+        .subscribe {
+            background-image: url(./img/Backp.jpg);
+}
 }
 
 @media (max-width: 767px) {
@@ -658,5 +664,8 @@ footer {
         flex-direction: column-reverse;
         padding-top: 43px;
         padding-bottom: 9px;
+    }
+        .subscribe {
+            background-image: url(./img/Backt.jpg);
     }
 }
