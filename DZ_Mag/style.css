@@ -4,11 +4,12 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 body {
     scroll-behavior: smooth;
-    max-width: 1600px;
+    width: 100%;
     font-family: 'Lato';
     margin: 0 auto;
 }
@@ -39,10 +40,28 @@ header {
 }
 
 .menu__person__card {
+    position: relative;
+}
+.menu__person__card__l {
     display: flex;
     gap: 33px;
+    padding-right: 10px;
 }
-
+.five {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    display: flex;
+    color: white;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background-color:#F16D7F;
+    font-size: 12px;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+}
 .search, .logo, .menu{
     border: none;
     background: #222222;
@@ -50,9 +69,45 @@ header {
     margin-top: 18px;
     margin-bottom: 19px;
 }
-
 .pre {
     background: #F1E4E6;
+    position: relative;
+}
+.menu__burger {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    width: 232px;
+    background-color: #FFFFFF;
+    padding: 32px 0 32px 32px;
+    gap: 20px;
+}
+.menu__burger h5 {
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16.8px;
+}
+.menu__burger ul {
+    color: #F16D7F;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.8px;
+}
+.menu__burger li {
+    color: #6F6E6E;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.8px;
+    padding-left: 20px;
+}
+.man, .woman, .kids {
+    display: flex;
+    gap: 11px;
+    flex-direction: column;
 }
 
 .preview {
@@ -176,9 +231,37 @@ header {
     gap: 30px;
     margin-bottom: 48px;
 }
-
-.cards {
+.card__hover {
+    display: flex;
+    position: absolute;
+    background: #3A3838DB;
+    width: 360px;
+    align-content: center;
+    justify-content: center;
+}
+.card__hover button {
+    display: flex;
+    border: 1px #FFFFFF;
+    background: rgba(0, 0, 0, 0.5);
+    width: 139px;
+    padding: 11px 11px;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 400px;
+    line-height: 16.8px;
+}
+.card1 {
+    position: relative;
+}
+.cards{
     cursor: pointer;
+}
+
+.cards:hover {
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .grid__product h6 {
@@ -230,6 +313,11 @@ header {
     border: 2px solid #FF6A6A;
     cursor: pointer;
     background: white;
+}
+
+.btn__all__product:hover {
+    background-color: #FF6A6A;
+    color: white;
 }
 
 .predlog {
@@ -382,6 +470,13 @@ footer {
     justify-content: center;
 }
 
+.fipt:hover path {
+    fill: white;
+}
+.fipt:hover {
+    background-color: #F16D7F;
+}
+
 @media(max-width: 1139px) and (min-width: 768px) {
         body {
             max-width: 1139px;
@@ -404,9 +499,9 @@ footer {
         .preview__text {
             font-size: 24px;
             line-height: 28.8px;
-            max-width: 311px;
             padding-left: 39px;
             margin-top: 138px;
+            min-width: 311px;
         }
         .brand {
             font-size: 44px;
@@ -509,9 +604,6 @@ footer {
         line-height: 45.6px;
     }
     .grid {
-        /* gap: 32px;
-        display: flex;
-        flex-direction: column; */
         grid-template-columns: 1fr;
     }
     .item__size {
@@ -522,7 +614,6 @@ footer {
     }
     .item__size {
         max-width: 343px;
-        max-height: 247px;
     }
     .item4__long {
         max-width: 343px;
