@@ -236,13 +236,22 @@ header {
     position: absolute;
     background: #3A3838DB;
     width: 360px;
+    height: 420px;
     align-content: center;
     justify-content: center;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.card__hover__button {
+    display: flex;
+    align-items: center;
+    border: 40px white;
 }
 .card__hover button {
     display: flex;
-    border: 1px #FFFFFF;
-    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #FFFFFF;
+    background-color: rgba(0, 0, 0, 0);
     width: 139px;
     padding: 11px 11px;
     justify-content: center;
@@ -252,8 +261,10 @@ header {
     font-size: 14px;
     font-weight: 400px;
     line-height: 16.8px;
+    cursor: pointer;
+    text-decoration: none;
 }
-.card1 {
+.cards {
     position: relative;
 }
 .cards{
@@ -263,7 +274,9 @@ header {
 .cards:hover {
     background: rgba(0, 0, 0, 0.5);
 }
-
+.cards:hover .card__hover {
+    display: flex;
+}
 .grid__product h6 {
     font-weight: 400;
     font-size: 13px;
